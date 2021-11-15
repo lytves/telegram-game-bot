@@ -11,8 +11,11 @@
 
 ### Screenshots:
 1. call the bot by @bot-name and 1st player make your choice throw inline keyboard
+
 ![](images/1.png)
 2. 2nd player don't know 1st player's bet and make his own choice
+
 ![](images/2.png)
-3. the bot shows results
+3. the bot send the game results to the group
+
 ![](images/3.png)
