@@ -1,4 +1,6 @@
-# tg-game-bot
+# Telegram game bot (Rock-Paper-Scissors) for multiple users game
+
+Project was created according to the crash course ["Телеграм бот-игра на JAVA в 100 строк (The game bot on 100 lines on Java for Telegram)"](https://www.youtube.com/watch?v=GVCb8Z94A6s) by "letsCode" youtube channel.
 
 ### Configuration:
 * add the bot to your telegram supergroup (maybe you should convert the group to public)
