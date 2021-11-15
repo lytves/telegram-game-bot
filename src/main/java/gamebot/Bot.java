@@ -76,11 +76,11 @@ private final static Map<String, String> emojis = new HashMap<String, String>(){
                     .replyMarkup(
                             new InlineKeyboardMarkup(
                                     new InlineKeyboardButton("🗿")
-                                            .callbackData(String.format("%d %s %s %s %d", chatId, senderName, senderChoose, "0", messageId)),
+                                            .callbackData(String.format("%d;;%s;;%s;;%s;;%d", chatId, senderName, senderChoose, "0", messageId)),
                                     new InlineKeyboardButton("✂️")
-                                            .callbackData(String.format("%d %s %s %s %d", chatId, senderName, senderChoose, "1", messageId)),
+                                            .callbackData(String.format("%d;;%s;;%s;;%s;;%d", chatId, senderName, senderChoose, "1", messageId)),
                                     new InlineKeyboardButton("\uD83D\uDCDC")
-                                            .callbackData(String.format("%d %s %s %s %d", chatId, senderName, senderChoose, "2", messageId))
+                                            .callbackData(String.format("%d;;%s;;%s;;%s;;%d", chatId, senderName, senderChoose, "2", messageId))
                             )
                     );
 
@@ -94,7 +94,7 @@ private final static Map<String, String> emojis = new HashMap<String, String>(){
 
         } else if (callbackQuery != null) {
 
-            String[] data = callbackQuery.data().split(" ");
+            String[] data = callbackQuery.data().split(";;");
             Long chatId = Long.parseLong(data[0]);
             String senderName = data[1];
             String senderChoise = data[2];
